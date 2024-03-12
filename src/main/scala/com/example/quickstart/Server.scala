@@ -21,7 +21,7 @@ object Server {
       .withHttpApp(finalApp)
       .withIdleTimeout(610.seconds)
       .withMaxConnections(8126)
-      // .withResponseHeaderTimeout(2.seconds)
+      .withResponseHeaderTimeout(1.seconds)
       .resource
       .useForever
   }
